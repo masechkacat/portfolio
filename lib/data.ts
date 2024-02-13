@@ -35,28 +35,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Certificate Full-Stack Developer",
+    location: "Html Academy",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Graduated after 18 months of studying web development on JS & TS with React, Node.js, and Express. Familiar with the principles of OOP, SOLID, and DRY. Also, I have experience with Docker, Webpack, and Git.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Certificate Developer Web",
+    location: "The Hacking Project",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "RNCP level 5 certification in web development. Acquired skills in HTML, CSS, JavaScript, Ruby, Ruby on Rails, and SQL.I also have experience with Heroku, Capybara, Devise & storage in AWS S3/Google Cloud.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023 - 2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Internship Full Stack Developer",
+    location: "League A",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Developement new features for visual side, and backend side. Enhancing existing features based on user feedback. Participating in discussions on the architecture of the application and the choice of technologies.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2024",
   },
 ] as const;
 
@@ -67,6 +67,7 @@ export const projectsData = [
       "Developing a SPA 'Big Trip' — a modern service that helps plan the trip itinerary, calculate the cost, and obtain information about attractions.",
     tags: ["Vanilla JS", "OOP", "MVC", "Webpack", "Flatpickr", "Day.js"],
     imageUrl: bigtripImg,
+    projectUrl: "https://masechkacat.github.io/368613-big-trip-21/",
   },
   {
     title: "Kekstagram",
@@ -74,13 +75,15 @@ export const projectsData = [
     "Implementing the frontend part for image viewing service where users can upload their own photos or view photos uploaded previously by other users.",
     tags: ["Vanilla JS", "HTML", "CSS", "Lodash", "JSON", "AJAX"],
     imageUrl: kekstagramImg,
+    projectUrl: "https://masechkacat.github.io/368613-kekstagram-29/",
   },
   {
     title: "Locavelow",
     description:
     "Leading the team, architecting, and implementing the backend for a platform for bike rentals, where you can rent a bike from a individual or rent out your own bike to other.",
-    tags: ["Ruby on Rails", "PostgreSQL", "Heroku", "Capybara", "Devise"],
+    tags: ["Ruby on Rails", "PostgreSQL", "Heroku", "Stripe", "Devise"],
     imageUrl: locavelowImg,
+    projectUrl: "https://locavelik-115195375a5a.herokuapp.com/",
   },
 ] as const;
 
