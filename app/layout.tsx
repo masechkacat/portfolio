@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -20,6 +21,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <>
+    <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content="Full Stack Developer, React, TypeScript, Node.js, Web Development, Marina Torunova" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Marina Torunova",
+            "url": "https://www.mt-dev.online",
+            "jobTitle": "Full Stack Developer",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Independent"
+            },
+            "sameAs": [
+              "http://www.linkedin.com/in/marina-torunova",
+              "http://www.github.com/masechkacat"
+            ]
+          })}
+        </script>
+      </Head>
     <html lang="en" className="!scroll-smooth">
       <body
         className={`${inter.className} bg-slate-50 text-slate-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
@@ -39,5 +63,6 @@ export default function RootLayout({
         </ThemeContextProvider>
       </body>
     </html>
+    </>
   );
 }
