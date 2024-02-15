@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.mt-dev.online/</loc>
+    <lastmod>2024-02-15</lastmod> <!-- дата последнего обновления -->
+    <changefreq>monthly</changefreq> <!-- Интервал -->
+    <priority>1.0</priority> <!-- Максимальный приоритет для главной страницы -->
+  </url>
+  <!-- Добавьте дополнительные URLы, если они есть -->
+</urlset>
