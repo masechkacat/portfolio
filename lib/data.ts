@@ -1,7 +1,7 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { RiAngularjsLine } from "react-icons/ri";
 import kekstagramImg from "@/public/kekstagramImg.png";
 import locavelowImg from "@/public/locavelowImg.png";
 import bigtripImg from "@/public/bigtripImg.png";
@@ -58,6 +58,14 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2024",
   },
+  {
+    title: "Internship Frontend Developer",
+    location: "Argo",
+    description:
+      "Developement a no-code HTML editor using a custom TypeScript framework. Responsibilities included bug fixes, product enhancement tasks, and creating custom developments for clients, such as mini-games and personalized web pages.",
+    icon: React.createElement(RiAngularjsLine),
+    date: "2024",
+  },
 ] as const;
 
 export const projectsData = [
@@ -93,6 +101,7 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "Angular",
   "Next.js",
   "Node.js",
   "Git",
@@ -102,8 +111,8 @@ export const skillsData = [
   "Redux",
   "NestJS",
   "PostgreSQL",
-  "Express",
-  "PostgreSQL",
+  "Express.js",
+  "Babylon.js",
   "Ruby on Rails",
   "Docker",
   "Framer Motion",
