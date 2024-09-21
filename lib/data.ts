@@ -66,6 +66,14 @@ export const experiencesData = [
     icon: React.createElement(RiAngularjsLine),
     date: "2024",
   },
+  {
+    title: "React Developer Web",
+    location: "IdealSoft",
+    description:
+    "Developed a SPA using REST API for property management companies and syndicates. Migrated desktop app features to a modern web application, integrating AI and analytics while preserving existing functionality.",
+    icon: React.createElement(FaReact),
+    date: "2024",
+  }
 ] as const;
 
 export const projectsData = [
