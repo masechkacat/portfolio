@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -7,12 +6,14 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: 'MT | Full Stack Developer',
   description: 'Marina Torunova is a full stack developer based in France. She specializes in building web applications with React, TypeScript, and Node.js.',
+  keywords: "Full Stack Developer, React, TypeScript, Node.js, Web Development, Marina Torunova",
 }
 
 export default function RootLayout({
@@ -21,40 +22,38 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-    <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content="Full Stack Developer, React, TypeScript, Node.js, Web Development, Marina Torunova" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "http://schema.org",
-            "@type": "Person",
-            "name": "Marina Torunova",
-            "url": "https://www.mt-dev.online",
-            "jobTitle": "Full Stack Developer",
-            "worksFor": {
-              "@type": "Organization",
-              "name": "Independent"
-            },
-            "sameAs": [
-              "http://www.linkedin.com/in/marina-torunova",
-              "http://www.github.com/masechkacat"
-            ]
-          })}
-        </script>
-        <script>
+    <html lang="en" className="!scroll-smooth">
+      <body
+        className={`${inter.className} bg-slate-50 text-slate-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
+      >
+        <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-KQ54XLGX');`}
-        </script>
-      </Head>
-    <html lang="en" className="!scroll-smooth">
-      <body
-        className={`${inter.className} bg-slate-50 text-slate-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
-      >
+        </Script>
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "Person",
+              "name": "Marina Torunova",
+              "url": "https://www.mt-dev.online",
+              "jobTitle": "Full Stack Developer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Independent"
+              },
+              "sameAs": [
+                "http://www.linkedin.com/in/marina-torunova",
+                "http://www.github.com/masechkacat"
+              ]
+            })
+          }}
+        />
         <noscript>
           <iframe 
             src="https://www.googletagmanager.com/ns.html?id=GTM-KQ54XLGX"
@@ -78,6 +77,5 @@ export default function RootLayout({
         </ThemeContextProvider>
       </body>
     </html>
-    </>
   );
 }
