@@ -12,19 +12,22 @@ import type { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 const siteUrl = "https://www.mt-dev.online";
-const title = "MT | Full Stack Developer";
+const title = "MT | Full-Stack Software Engineer";
 const description =
-  "Marina Torunova is a full stack developer based in France. She specializes in building web applications with React, TypeScript, and Node.js.";
+  "Marina Torunova is a full-stack software engineer based in France. TypeScript on both sides of the stack: Node.js, NestJS, React, Next.js and PostgreSQL.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title,
   description,
   keywords: [
-    "Full Stack Developer",
-    "React",
+    "Full-Stack Software Engineer",
     "TypeScript",
     "Node.js",
+    "NestJS",
+    "React",
+    "Next.js",
+    "PostgreSQL",
     "Web Development",
     "Marina Torunova",
   ],
@@ -71,14 +74,14 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Marina Torunova",
               "url": "https://www.mt-dev.online",
-              "jobTitle": "Full Stack Developer",
+              "jobTitle": "Full-Stack Software Engineer",
               "worksFor": {
                 "@type": "Organization",
                 "name": "Independent"
               },
               "sameAs": [
-                "http://www.linkedin.com/in/marina-torunova",
-                "http://www.github.com/masechkacat"
+                "https://www.linkedin.com/in/marina-torunova",
+                "https://github.com/masechkacat"
               ]
             })
           }}

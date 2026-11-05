@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Marina Torunova, Full Stack Developer";
+export const alt = "Marina Torunova, Full-Stack Software Engineer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -27,7 +27,7 @@ export default function OpenGraphImage() {
           Marina Torunova
         </div>
         <div style={{ fontSize: 44, marginTop: 24 }}>
-          Full Stack Developer · TypeScript · React · Node.js
+          Full-Stack Engineer · TypeScript · Node.js · React
         </div>
       </div>
     ),

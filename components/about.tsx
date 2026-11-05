@@ -19,14 +19,23 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-      I embarked on my web development journey fueled by a blend of curiosity for the digital world and a commitment to learning. Initially attracted to the field by its blend of{" "}
-      <span className="italic">creativity and logic</span>, I&apos;ve since dedicated myself to mastering the fundamentals of both{" "}<span className="font-medium">front-end</span> and{" "}<span className="font-medium">back-end</span>.</p>
+        I&apos;m a <span className="font-medium">full-stack engineer</span> based in France, working remotely. I write{" "}
+        <span className="font-medium">TypeScript on both sides</span> of the stack: Node.js services with{" "}
+        <span className="font-medium">NestJS, Express or Fastify</span> on the back end,{" "}
+        <span className="font-medium">React and Next.js</span> on the front, PostgreSQL underneath. Before TypeScript there was{" "}
+        <span className="italic">Ruby on Rails</span>, and I&apos;m comfortable picking up whatever the product needs next.
+      </p>
       <p className="mb-3">
-      With a solid foundation in{" "}<span className="font-medium">React, Redux, Express.js</span>, and a keen interest in developing single-page applications{" "}<span className="font-medium">(SPAs)</span>, I focus on creating responsive and user-friendly interfaces. My experience also extends to designing{" "}<span className="font-medium">RESTful APIs</span> and understanding the basics of{" "}<span className="underline">web architecture</span> and {" "}<span className="underline">security principles</span>, ensuring a comprehensive approach to web development.
+        At <span className="font-medium">Ideal Soft</span>, a B2B SaaS for French property-management agencies, I build and run the services around the core product: an{" "}
+        <span className="underline">AI proxy</span>, a Jira proxy, a chat assistant, an{" "}
+        <span className="underline">OCR pipeline</span> for invoices and quotes, and now a mail gateway with an agent on top. Earlier I built the backend of{" "}
+        <span className="font-medium">Locavelow</span>, a peer-to-peer bike-rental marketplace with bookings, Stripe payments and messaging.
       </p>
       <p>
-      As a junior developer, I&apos;m eager to apply my skills in a {" "}
-      <span className="italic">dynamic environment</span>, continuously{" "}<span className="font-medium">grow</span> through new challenges, and contribute to meaningful projects. My{" "}<span className="font-medium">goal</span> is to not just develop applications, but to craft experiences that{" "}<span className="underline">make a positive impact</span>.
+        I work <span className="italic">AI-native</span>: I design and maintain my own{" "}
+        <span className="font-medium">Claude Code harness</span>, from PRD to research, plan and issues, with an autonomous build loop and review gates, and I{" "}
+        <span className="underline">review everything it produces</span>. In practice that means one engineer carrying the delivery of a small team. Open to{" "}
+        <span className="font-medium">freelance and employment</span>.
       </p>
     </motion.section>
   );
