@@ -36,6 +36,8 @@ export default function ThemeContextProvider({
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
 
     if (localTheme) {
+      // Theme lives in localStorage, which is only readable after hydration.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setTheme(localTheme);
 
       if (localTheme === "dark") {

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import avatar from "@/public/avatar.jpg";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
@@ -19,7 +19,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-200 text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -33,7 +33,7 @@ export default function Intro() {
           >
             <Image
               src={avatar}
-              alt="Ricardo portrait"
+              alt="Portrait of Marina Torunova"
               width="292"
               height="292"
               quality="95"
@@ -59,7 +59,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium leading-normal! sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -79,7 +79,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-slate-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-slate-950 active:scale-105 transition"
+          className="group bg-slate-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-hidden focus:scale-110 hover:scale-110 hover:bg-slate-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -90,7 +90,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-hidden focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/CV_Torunova_Marina.pdf"
           download
         >
@@ -103,6 +103,8 @@ export default function Intro() {
             className="bg-white p-4 text-slate-700 hover:text-slate-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/marina-torunova/"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
           >
             <BsLinkedin />
           </a>
@@ -111,6 +113,8 @@ export default function Intro() {
             className="bg-white p-4 text-slate-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://github.com/masechkacat"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
           >
             <FaGithubSquare />
           </a>

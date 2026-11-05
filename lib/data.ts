@@ -2,9 +2,9 @@ import React from "react";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { RiAngularjsLine } from "react-icons/ri";
-import kekstagramImg from "@/public/kekstagramImg.png";
-import locavelowImg from "@/public/locavelowImg.png";
-import bigtripImg from "@/public/bigtripImg.png";
+import kekstagramImg from "@/public/kekstagramImg.webp";
+import locavelowImg from "@/public/locavelowImg.webp";
+import bigtripImg from "@/public/bigtripImg.webp";
 
 export const links = [
   {

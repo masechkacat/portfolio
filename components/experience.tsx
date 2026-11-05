@@ -53,8 +53,8 @@ const ExperienceElement = ({ theme, item }: ExperienceElementProps) => {
                 }}
             >
                 <h3 className='font-semibold capitalize'>{item.title}</h3>
-                <p className='font-mono !mt-0'>{item.location}</p>
-                <p className='!mt-1 !text-sm text-slate-700 dark:text-white/75'>
+                <p className='font-mono mt-0!'>{item.location}</p>
+                <p className='mt-1! text-sm! text-slate-700 dark:text-white/75'>
                     {item.description}
                 </p>
             </VerticalTimelineElement>

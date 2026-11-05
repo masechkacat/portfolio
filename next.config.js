@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    // other experimental options...
+  images: {
+    qualities: [75, 95],
   },
 };
 
