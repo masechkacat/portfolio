@@ -54,14 +54,14 @@ export default function Contact() {
       >
         <input
           type="text"
-          name="company"
+          name="website_url_confirm"
           tabIndex={-1}
-          autoComplete="off"
+          autoComplete="nope"
           aria-hidden="true"
           className="absolute -left-[9999px] h-0 w-0 opacity-0"
         />
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-hidden"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white/80 dark:focus:bg-white transition-all dark:outline-hidden"
           name="senderEmail"
           type="email"
           required
@@ -69,7 +69,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-hidden"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white/80 dark:focus:bg-white transition-all dark:outline-hidden"
           name="message"
           placeholder="Your message"
           required

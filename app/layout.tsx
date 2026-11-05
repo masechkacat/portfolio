@@ -56,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth!">
       <body
-        className={`${inter.className} bg-slate-50 text-slate-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
+        className={`${inter.className} bg-slate-50 text-slate-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-slate-50/90`}
       >
         <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -77,7 +77,7 @@ export default function RootLayout({
               "jobTitle": "Full-Stack Software Engineer",
               "worksFor": {
                 "@type": "Organization",
-                "name": "Independent"
+                "name": "Ideal Soft"
               },
               "sameAs": [
                 "https://www.linkedin.com/in/marina-torunova",
